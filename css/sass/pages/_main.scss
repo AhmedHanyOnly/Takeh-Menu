@@ -1,0 +1,234 @@
+.swiper-landing {
+  height: calc(50vh);
+  position: relative;
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: red;
+    background: linear-gradient(180deg, transparent, transparent, #fff);
+    z-index: 2;
+  }
+  .content-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    color: #fff;
+  }
+  .swiper-wrapper {
+    position: relative;
+    .swiper-slide {
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  @include maxWidth(sm) {
+    height: 70vh;
+  }
+}
+.info-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+  padding: 20px;
+  .logo {
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid $main-color;
+    }
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  .desc {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffffffbd;
+    margin-bottom: 10px;
+    color: $sec-color;
+    svg,
+    i {
+      color: $main-color;
+    }
+  }
+  @include maxWidth(sm) {
+    flex-direction: column;
+    gap: 10px;
+    .title {
+      text-align: center;
+    }
+  }
+}
+.product-slider {
+  height: fit-content;
+  padding: 10px 50px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    @include centering;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    color: $main-color;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+    &::after {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+    @include maxWidth(sm) {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    inset-inline-start: 1rem !important;
+
+    &::after {
+      content: "\f054";
+      font-family: "FontAwesome";
+    }
+  }
+  .swiper-button-next {
+    inset-inline-end: 1rem !important;
+    &::after {
+      content: "\f053";
+      font-family: "FontAwesome";
+    }
+  }
+}
+.main-ad {
+  margin: 50px 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.text-page {
+  color: #333;
+  font-weight: 600;
+  line-height: 36px;
+
+  font-size: 16px;
+  @include maxWidth(sm) {
+    line-height: 32px;
+    font-size: 14px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  a {
+    color: #fff;
+    padding: 3px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $sec-color;
+    font-size: 24px;
+    border: 3px solid $main-color;
+    transition: 300ms ease-in-out all;
+    &:hover {
+      scale: 1.09;
+      background-color: $main-color;
+    }
+  }
+}
+
+.branch-holder {
+  position: fixed;
+  top: 10px;
+  inset-inline-start: 20px;
+  z-index: 999;
+  width: fit-content;
+  select {
+    border-radius: 30px;
+    font-size: 14px;
+    border: 3px solid $main-color;
+    &:focus {
+      border-color: $main-color;
+      outline: 0;
+      box-shadow: 0 0 10px 0.1rem $main-color;
+    }
+  }
+}
+
+.category-slider {
+  height: fit-content;
+  padding: 10px 50px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    @include centering;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    color: $sec-color;
+    border: 1px solid $main-color;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+    &::after {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+    @include maxWidth(sm) {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    inset-inline-start: 0rem !important;
+
+    &::after {
+      content: "\f054";
+      font-family: "FontAwesome";
+    }
+  }
+  .swiper-button-next {
+    inset-inline-end: 0rem !important;
+    &::after {
+      content: "\f053";
+      font-family: "FontAwesome";
+    }
+  }
+}
+.btn-category {
+  background-color: #fff;
+  border-radius: 80px;
+  color: $main-color;
+  border: 1px solid $main-color;
+  padding: 10px 20px;
+  font-size: 14px;
+  &.active {
+    background-color: $main-color;
+    color: #fff;
+    border-color: $main-color;
+  }
+}

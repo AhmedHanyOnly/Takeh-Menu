@@ -1,0 +1,19 @@
+.footer {
+  background-color: $main-color;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  .bar {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .footer-bottom {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 11px;
+    background-color: $main-color-dark;
+justify-content: center;  }
+}

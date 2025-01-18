@@ -57,6 +57,37 @@
   &:hover {
     border: 2px solid $main-color;
   }
+  @include maxWidth(sm){
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    .text {
+      text-align: center;
+      .title {
+        font-size: 15px;
+        line-height: 14.4px;
+        padding: 7px;
+      }
+      .price {
+        margin-bottom: 10px;
+
+        .num {
+          color: $main-color;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+        }
+      }
+      .desc{
+        font-size: 10px !important;
+      }
+    }
+    .btn-buy {
+      padding: 3px;
+      font-size: 12px;
+    }
+  }
 }
 .service-section {
   background: url(../../../images/serv-land.svg);

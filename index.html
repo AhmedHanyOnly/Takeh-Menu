@@ -153,72 +153,97 @@
           <div class="swiper-button-next"></div>
         </div>
         <div class="category-holder mb-4">
-          <div class="section-title">Classic Pizzas</div>
+          <div class="section-title">كلاسيك بيتزا</div>
           <div class="row">
             <div class="col-12 col-md-4 col-lg-3">
               <div class="box-product">
                 <img src="./images/pr-1.jpg" class="img-product" alt="img" />
                 <div class="content">
                   <div class="text">
-                    <div class="title">Margherita</div>
+                    <div class="title">مارغريتا</div>
                     <div class="price">
-                      <div class="num">20$</div>
+                      <div class="num">٦٩ ريال</div>
                     </div>
                     <div class="desc">
-                      A delicious pizza loaded with spicy pepperoni slices and
-                      gooey mozzarella cheese served with a classic marinara
-                      sauce.
+                      بيتزا مارغريتا الأصلية مع صلصة الطماطم الطازجة، جبنة
+                      الموزاريلا، وأوراق الريحان الطازجة. مخبوزة في الفرن الحجري
+                      التقليدي.
                     </div>
                   </div>
-                  <button class="btn-buy">التفاصيل</button>
+                  <button
+                    class="btn-buy"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    التفاصيل
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="category-holder mb-4">
-          <div class="section-title">Classic Pizzas</div>
-          <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="box-product">
-                <img src="./images/pr-1.jpg" class="img-product" alt="img" />
-                <div class="content">
-                  <div class="text">
-                    <div class="title">Margherita</div>
-                    <div class="price">
-                      <div class="num">20$</div>
-                    </div>
-                    <div class="desc">
-                      A delicious pizza loaded with spicy pepperoni slices and
-                      gooey mozzarella cheese served with a classic marinara
-                      sauce.
-                    </div>
-                  </div>
-                  <button class="btn-buy">التفاصيل</button>
-                </div>
+        
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ><i class="fa-solid fa-xmark"></i></button>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="category-holder mb-4">
-          <div class="section-title">Classic Pizzas</div>
-          <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="box-product">
-                <img src="./images/pr-1.jpg" class="img-product" alt="img" />
-                <div class="content">
-                  <div class="text">
-                    <div class="title">Margherita</div>
-                    <div class="price">
-                      <div class="num">20$</div>
-                    </div>
-                    <div class="desc">
-                      A delicious pizza loaded with spicy pepperoni slices and
-                      gooey mozzarella cheese served with a classic marinara
-                      sauce.
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="section-title">مارغريتا</h2>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-modal">
+                      <img
+                        src="/images/pr-1.jpg"
+                        alt="مارغريتا بيتزا"
+                      />
                     </div>
                   </div>
-                  <button class="btn-buy">التفاصيل</button>
+                  <div class="col-md-6">
+                    <div class="product-description">
+                      بيتزا مارغريتا الأصلية مع صلصة الطماطم الطازجة، جبنة
+                      الموزاريلا، وأوراق الريحان الطازجة. مخبوزة في الفرن الحجري
+                      التقليدي.
+                    </div>
+                    <div class="price">٦٩ ريال</div>
+                    <div class="add-ons">
+                      <h3 class="add-ons-title">الإضافات</h3>
+                      <div class="add-on-item">
+                        <div class="add-on-name">
+                          
+                          <label for="extra-cheese">جبنة إضافية</label>
+                        </div>
+                        <span class="add-on-price">+١٠ ريال</span>
+                      </div>
+                      <div class="add-on-item">
+                        <div class="add-on-name">
+                        
+                          <label for="mushrooms">فطر</label>
+                        </div>
+                        <span class="add-on-price">+٨ ريال</span>
+                      </div>
+                      <div class="add-on-item">
+                        <div class="add-on-name">
+                          <label for="olives">زيتون</label>
+                        </div>
+                        <span class="add-on-price">+٥ ريال</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

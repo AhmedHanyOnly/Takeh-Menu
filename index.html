@@ -182,7 +182,7 @@
             </div>
           </div>
         </div>
-        
+
         <div
           class="modal fade"
           id="exampleModal"
@@ -198,7 +198,9 @@
                   class="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
-                ><i class="fa-solid fa-xmark"></i></button>
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
               <div class="modal-body">
                 <div class="row">
@@ -207,10 +209,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="img-modal">
-                      <img
-                        src="./images/pr-1.jpg"
-                        alt="مارغريتا بيتزا"
-                      />
+                      <img src="./images/pr-1.jpg" alt="مارغريتا بيتزا" />
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -220,60 +219,129 @@
                       التقليدي.
                     </div>
                     <div class="price">٦٩ شيكل</div>
-                    <div class="add-ons">
-                      <h3 class="add-ons-title">الإضافات</h3>
-                      <div class="add-on-item">
-                        <div class="add-on-name">
-                          
-                          <img src="./images/كاتشب-600x338.jpg" class="img-added" alt="">
-                          <label for="extra-cheese">جبنة إضافية</label>
+                    <ul class="nav nav-tabs nav-tabs-style" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="home-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#home-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="home-tab-pane"
+                          aria-selected="true"
+                        >
+                        الإضافات
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="profile-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#profile-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="profile-tab-pane"
+                          aria-selected="false"
+                        >
+                          الاحجام
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="home-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                        tabindex="0"
+                      >
+                        <div class="add-ons">
+                          <h3 class="add-ons-title">الإضافات</h3>
+                          <div class="add-on-item">
+                            <div class="add-on-name">
+                              <img
+                                src="./images/كاتشب-600x338.jpg"
+                                class="img-added"
+                                alt=""
+                              />
+                              <label for="extra-cheese">جبنة إضافية</label>
+                            </div>
+                            <span class="add-on-price">+١٠ شيكل</span>
+                          </div>
+                          <div class="add-on-item">
+                            <div class="add-on-name">
+                              <img
+                                src="./images/كاتشب-600x338.jpg"
+                                class="img-added"
+                                alt=""
+                              />
+                              <label for="mushrooms">فطر</label>
+                            </div>
+                            <span class="add-on-price">+٨ شيكل</span>
+                          </div>
+                          <div class="add-on-item">
+                            <div class="add-on-name">
+                              <img
+                                src="./images/كاتشب-600x338.jpg"
+                                class="img-added"
+                                alt=""
+                              />
+                              <label for="olives">زيتون</label>
+                            </div>
+                            <span class="add-on-price">+٥ شيكل</span>
+                          </div>
                         </div>
-                        <span class="add-on-price">+١٠ شيكل</span>
                       </div>
-                      <div class="add-on-item">
-                        <div class="add-on-name">
-                        
-                          <img src="./images/كاتشب-600x338.jpg" class="img-added" alt="">
-                          <label for="mushrooms">فطر</label>
+                      <div
+                        class="tab-pane fade"
+                        id="profile-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                        tabindex="0"
+                      >
+                        <div class="add-ons">
+                          <h3 class="add-ons-title">الاحجام</h3>
+                          <div class="add-on-item">
+                            <div class="add-on-name">
+                              <img
+                                src="./images/كاتشب-600x338.jpg"
+                                class="img-added"
+                                alt=""
+                              />
+
+                              <label for="extra-cheese">صغير</label>
+                            </div>
+                            <span class="add-on-price">+١٠ شيكل</span>
+                          </div>
+                          <div class="add-on-item">
+                            <div class="add-on-name">
+                              <img
+                                src="./images/كاتشب-600x338.jpg"
+                                class="img-added"
+                                alt=""
+                              />
+
+                              <label for="mushrooms">وسط</label>
+                            </div>
+                            <span class="add-on-price">+٨ شيكل</span>
+                          </div>
+                          <div class="add-on-item">
+                            <div class="add-on-name">
+                              <img
+                                src="./images/كاتشب-600x338.jpg"
+                                class="img-added"
+                                alt=""
+                              />
+
+                              <label for="olives">كبير</label>
+                            </div>
+                            <span class="add-on-price">+٥ شيكل</span>
+                          </div>
                         </div>
-                        <span class="add-on-price">+٨ شيكل</span>
-                      </div>
-                      <div class="add-on-item">
-                        <div class="add-on-name">
-                          <img src="./images/كاتشب-600x338.jpg" class="img-added" alt="">
-                          <label for="olives">زيتون</label>
-                        </div>
-                        <span class="add-on-price">+٥ شيكل</span>
                       </div>
                     </div>
-                    <div class="add-ons">
-                      <h3 class="add-ons-title">الاحجام</h3>
-                      <div class="add-on-item">
-                        <div class="add-on-name">
-                          <img src="./images/كاتشب-600x338.jpg" class="img-added" alt="">
-
-                          <label for="extra-cheese">صغير</label>
-                        </div>
-                        <span class="add-on-price">+١٠ شيكل</span>
-                      </div>
-                      <div class="add-on-item">
-                        <div class="add-on-name">
-                          <img src="./images/كاتشب-600x338.jpg" class="img-added" alt="">
-
-                          <label for="mushrooms">وسط</label>
-                        </div>
-                        <span class="add-on-price">+٨ شيكل</span>
-                      </div>
-                      <div class="add-on-item">
-                        <div class="add-on-name">
-                          <img src="./images/كاتشب-600x338.jpg" class="img-added" alt="">
-
-                          <label for="olives">كبير</label>
-                        </div>
-                        <span class="add-on-price">+٥ شيكل</span>
-                      </div>
-                    </div>
-                  
                   </div>
                 </div>
               </div>

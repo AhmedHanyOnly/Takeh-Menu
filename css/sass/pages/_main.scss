@@ -370,3 +370,15 @@
     height: 200px;
   }
 }
+
+
+.nav-tabs-style{
+  .nav-link{
+    color: $sec-color;
+    font-size: 12px;
+    &.active{
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+}

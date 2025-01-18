@@ -311,6 +311,8 @@
 }
 .add-ons {
   margin-top: 20px;
+  border-bottom: 1px solid #eee;
+
 }
 
 .add-ons-title {
@@ -325,13 +327,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
 }
 
 .add-on-name {
   display: flex;
   align-items: center;
   gap: 10px;
+  .img-added{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
 }
 
 .add-on-price {
